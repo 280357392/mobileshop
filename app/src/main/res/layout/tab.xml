@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/tab_item_home"
+        style="@style/tab_item_linear_layout">
+
+        <ImageView
+            android:id="@+id/tab_item_home_btn"
+            style="@style/tab_item_image_button"
+            android:src="@drawable/tab_home_normal"/>
+
+        <TextView
+            android:id="@+id/tab_item_home_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_item_category"
+        style="@style/tab_item_linear_layout">
+
+        <ImageView
+            android:id="@+id/tab_item_category_btn"
+            style="@style/tab_item_image_button"
+            android:src="@drawable/tab_category_normal"/>
+
+        <TextView
+            android:id="@+id/tab_item_category_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_item_cart"
+        style="@style/tab_item_linear_layout">
+
+        <ImageView
+            android:id="@+id/tab_item_cart_btn"
+            style="@style/tab_item_image_button"
+            android:src="@drawable/tab_home_normal"/>
+
+        <TextView
+            android:id="@+id/tab_item_cart_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_item_personal"
+        style="@style/tab_item_linear_layout">
+
+        <ImageView
+            android:id="@+id/tab_item_personal_btn"
+            style="@style/tab_item_image_button"
+            android:src="@drawable/tab_my_normal"/>
+        <TextView
+            android:id="@+id/tab_item_personal_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
