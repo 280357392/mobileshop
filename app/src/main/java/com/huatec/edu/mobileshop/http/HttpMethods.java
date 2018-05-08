@@ -1,6 +1,7 @@
 package com.huatec.edu.mobileshop.http;
 
 import com.huatec.edu.mobileshop.entity.HttpResult;
+import com.huatec.edu.mobileshop.entity.MemberEntity;
 import com.huatec.edu.mobileshop.http.service.MemberService;
 
 import java.util.concurrent.TimeUnit;
@@ -49,6 +50,7 @@ public class HttpMethods {
         }
         return mInstance;
     }
+
 
     /**
      * 剥离data数据，返回给Subscriber观察者

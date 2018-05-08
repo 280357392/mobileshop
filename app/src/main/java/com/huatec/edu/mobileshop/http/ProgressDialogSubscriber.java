@@ -16,7 +16,7 @@ import io.reactivex.disposables.Disposable;
  * 封装一个有加载进度的Observer
  * @param <T>
  */
-public class ProgressDialogSubscriber<T> implements Observer {
+public class ProgressDialogSubscriber<T> implements Observer<T> {
 
     private static final String TAG = "ProgressDialogSubscribe";
     private Context mContext;
@@ -34,7 +34,7 @@ public class ProgressDialogSubscriber<T> implements Observer {
     }
 
     @Override
-    public void onNext(Object o) {
+    public void onNext(T t) {
 
     }
 

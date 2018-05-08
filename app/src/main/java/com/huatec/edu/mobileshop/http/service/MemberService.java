@@ -7,6 +7,7 @@ import io.reactivex.Observable;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface MemberService {
 
@@ -24,5 +25,18 @@ public interface MemberService {
     Observable<HttpResult<MemberEntity>> login(
             @Field("uname") String uname,
             @Field("password") String password);
+
+    //找回密码
+    @POST("member/pwd")
+    Observable<HttpResult> findPassword(@Field("email") String email);
+
+    //修改密码
+    @FormUrlEncoded
+    @POST("member/{memberId}")
+    Observable<HttpResult> changePassword(
+            @Path("memberId") String memberId,
+            @Field("old_pwd") String old_pwd,
+            @Field("new_pwd") String new_pwd
+    );
 
 }

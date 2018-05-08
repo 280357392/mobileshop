@@ -13,10 +13,6 @@ import butterknife.OnClick;
 public class TestActivity extends AppCompatActivity {
 
     private static final String TAG = "TestActivity";
-    @BindView(R.id.btn)
-    Button mBtn;
-    @BindView(R.id.txv)
-    TextView mTxv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +22,4 @@ public class TestActivity extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.btn)
-    public void onViewClicked() {
-        mTxv.setText("123");
-    }
 }

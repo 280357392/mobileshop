@@ -27,7 +27,7 @@ import butterknife.OnClick;
  * 8秒后自动跳转主页
  * 也可手动点击跳到主页
  */
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 
     @BindView(R.id.ad_image)
     ImageView mAdImage;

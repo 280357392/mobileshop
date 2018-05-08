@@ -36,13 +36,15 @@ public class HomeFragment extends BaseFragment {
 
     private static final String TAG = "HomeFragment";
     Unbinder unbinder;
+    //搜索
     @BindView(R.id.home_search)
     TextView searchTV;
+    //下拉刷新控件
     @BindView(R.id.swipe_refresh_layout)
     SwipeRefreshLayout mSwipeRefreshLayout;
+    //webView容器布局
     @BindView(R.id.web_view_content_fl)
     FrameLayout mWebViewContentFl;
-
     private MyWebView mWebView;
 
     @Nullable

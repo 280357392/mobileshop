@@ -36,7 +36,7 @@ public class NavigationFragment extends BaseFragment implements View.OnClickList
     private HomeFragment mHomeFragment;
     private TwoFragment twoFragment;
     private ThreeFragment threeFragment;
-    private FourFragment fourFragment;
+    private PersonFragment mPersonFragment;
 
     @Nullable
     @Override
@@ -98,8 +98,8 @@ public class NavigationFragment extends BaseFragment implements View.OnClickList
             fragmentTransaction.hide(twoFragment);
         if (threeFragment != null)
             fragmentTransaction.hide(threeFragment);
-        if (fourFragment != null) {
-            fragmentTransaction.hide(fourFragment);
+        if (mPersonFragment != null) {
+            fragmentTransaction.hide(mPersonFragment);
         }
 
         //根据tabItem的id来执行不同的操作
@@ -157,11 +157,11 @@ public class NavigationFragment extends BaseFragment implements View.OnClickList
                 tabItemPersonalTxt.setTextColor(Color.parseColor("#bfbfbf"));
                 Log.d(TAG, "setTabSelection: 3");
 
-                if (fourFragment == null) {
-                    fourFragment = new FourFragment();
-                    fragmentTransaction.add(R.id.content, fourFragment);
+                if (mPersonFragment == null) {
+                    mPersonFragment = new PersonFragment();
+                    fragmentTransaction.add(R.id.content, mPersonFragment);
                 } else {
-                    fragmentTransaction.show(fourFragment);
+                    fragmentTransaction.show(mPersonFragment);
                 }
 
                 //购物车不缓存页面
