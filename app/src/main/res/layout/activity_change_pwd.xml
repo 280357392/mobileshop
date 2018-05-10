@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFECECEC"
-    tools:context=".activity.RegisterActivity">
+    tools:context=".activity.login.RegisterActivity">
 
     <!--标题-->
     <RelativeLayout

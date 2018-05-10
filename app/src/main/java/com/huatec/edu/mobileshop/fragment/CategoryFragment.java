@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 
 import com.huatec.edu.mobileshop.R;
 
-public class TwoFragment extends BaseFragment {
+public class CategoryFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_two, container, false);
+        View view = inflater.inflate(R.layout.fragment_category, container, false);
         return view;
     }
 }

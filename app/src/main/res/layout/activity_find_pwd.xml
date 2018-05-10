@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFECECEC"
-    tools:context=".activity.FindPWDActivity">
+    tools:context=".activity.login.FindPWDActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

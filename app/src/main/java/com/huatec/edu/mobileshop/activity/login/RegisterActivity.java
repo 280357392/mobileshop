@@ -1,4 +1,4 @@
-package com.huatec.edu.mobileshop.activity;
+package com.huatec.edu.mobileshop.activity.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.huatec.edu.mobileshop.R;
-import com.huatec.edu.mobileshop.entity.MemberEntity;
-import com.huatec.edu.mobileshop.http.presenter.MemberPresenter;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -20,8 +18,6 @@ import java.util.regex.Pattern;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 
 /**
  * 注册页面

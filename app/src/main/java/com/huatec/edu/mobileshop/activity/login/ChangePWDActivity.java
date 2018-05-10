@@ -1,4 +1,4 @@
-package com.huatec.edu.mobileshop.activity;
+package com.huatec.edu.mobileshop.activity.login;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.huatec.edu.mobileshop.R;
+import com.huatec.edu.mobileshop.activity.BaseActivity;
 import com.huatec.edu.mobileshop.entity.HttpResult;
 import com.huatec.edu.mobileshop.http.ProgressDialogSubscriber;
 import com.huatec.edu.mobileshop.http.presenter.MemberPresenter;

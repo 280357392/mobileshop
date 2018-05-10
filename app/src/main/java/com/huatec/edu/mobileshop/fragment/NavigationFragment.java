@@ -34,7 +34,7 @@ public class NavigationFragment extends BaseFragment implements View.OnClickList
     private TextView tabItemCartTxt;
     private TextView tabItemPersonalTxt;
     private HomeFragment mHomeFragment;
-    private TwoFragment twoFragment;
+    private CategoryFragment mCategoryFragment;
     private ThreeFragment threeFragment;
     private PersonFragment mPersonFragment;
 
@@ -94,8 +94,8 @@ public class NavigationFragment extends BaseFragment implements View.OnClickList
         //隐藏所有fragment
         if (mHomeFragment != null)
             fragmentTransaction.hide(mHomeFragment);
-        if (twoFragment != null)
-            fragmentTransaction.hide(twoFragment);
+        if (mCategoryFragment != null)
+            fragmentTransaction.hide(mCategoryFragment);
         if (threeFragment != null)
             fragmentTransaction.hide(threeFragment);
         if (mPersonFragment != null) {
@@ -126,11 +126,11 @@ public class NavigationFragment extends BaseFragment implements View.OnClickList
                 tabItemCategoryBtn.setImageResource(R.drawable.tab_category_pressed);
                 tabItemCategoryTxt.setTextColor(Color.parseColor("#bfbfbf"));
                 Log.d(TAG, "setTabSelection: 1");
-                if (twoFragment == null) {
-                    twoFragment = new TwoFragment();
-                    fragmentTransaction.add(R.id.content, twoFragment);
+                if (mCategoryFragment == null) {
+                    mCategoryFragment = new CategoryFragment();
+                    fragmentTransaction.add(R.id.content, mCategoryFragment);
                 } else {
-                    fragmentTransaction.show(twoFragment);
+                    fragmentTransaction.show(mCategoryFragment);
                 }
 
                 //购物车不缓存页面

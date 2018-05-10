@@ -1,4 +1,4 @@
-package com.huatec.edu.mobileshop.activity;
+package com.huatec.edu.mobileshop.activity.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.huatec.edu.mobileshop.R;
-import com.huatec.edu.mobileshop.entity.HttpResult;
-import com.huatec.edu.mobileshop.http.ProgressDialogSubscriber;
-import com.huatec.edu.mobileshop.http.presenter.MemberPresenter;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -21,8 +21,8 @@ import android.widget.Toast;
 
 import com.huatec.edu.mobileshop.R;
 import com.huatec.edu.mobileshop.activity.AddressActivity;
-import com.huatec.edu.mobileshop.activity.ChangePWDActivity;
-import com.huatec.edu.mobileshop.activity.LoginActivity;
+import com.huatec.edu.mobileshop.activity.login.ChangePWDActivity;
+import com.huatec.edu.mobileshop.activity.login.LoginActivity;
 import com.huatec.edu.mobileshop.activity.MyFavoriteActivity;
 import com.huatec.edu.mobileshop.activity.MyOrderActivity;
 

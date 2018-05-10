@@ -2,6 +2,7 @@ package com.huatec.edu.mobileshop.http;
 
 import com.huatec.edu.mobileshop.entity.HttpResult;
 import com.huatec.edu.mobileshop.entity.MemberEntity;
+import com.huatec.edu.mobileshop.http.service.CategoryService;
 import com.huatec.edu.mobileshop.http.service.MemberService;
 
 import java.util.concurrent.TimeUnit;
@@ -24,6 +25,7 @@ public class HttpMethods {
     private Retrofit retrofit;
     private static HttpMethods mInstance;
     protected static MemberService memberService;
+    protected static CategoryService categoryService;
 
     public HttpMethods() {
         if (mInstance == null){
@@ -37,6 +39,7 @@ public class HttpMethods {
                     .client(okHttpClient)
                     .build();
             memberService = retrofit.create(MemberService.class);
+            categoryService = retrofit.create(CategoryService.class);
         }
     }
 

@@ -1,6 +1,5 @@
-package com.huatec.edu.mobileshop.activity;
+package com.huatec.edu.mobileshop.activity.login;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,9 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.huatec.edu.mobileshop.R;
-import com.huatec.edu.mobileshop.entity.MemberEntity;
-import com.huatec.edu.mobileshop.http.ProgressDialogSubscriber;
-import com.huatec.edu.mobileshop.http.presenter.MemberPresenter;
+import com.huatec.edu.mobileshop.activity.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

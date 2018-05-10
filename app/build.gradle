@@ -45,7 +45,9 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
-
+    //butterknife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //recyclerview
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
 }
